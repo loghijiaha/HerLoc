@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import {LoginPage} from ',,/pages/login/login'
 import { Geolocation } from '@ionic-native/geolocation';
 import {AngularFireModule} from 'angularfire2'
 import { StatusBar } from '@ionic-native/status-bar';
