@@ -31,6 +31,7 @@ var config = {
     ContactPage,
     HomePage,
     TabsPage
+    LoginPage
   ],
   imports: [
     BrowserModule,
