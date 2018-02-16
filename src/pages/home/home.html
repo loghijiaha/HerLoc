@@ -1,0 +1,58 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Book
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="allBook">
+ <ion-fab center >
+   <button ion-fab color="secondary" ><ion-icon name="md-bus"></ion-icon></button>
+   <ion-fab-list side="right">
+       <button ion-fab><ion-icon name="add"></ion-icon></button>
+   </ion-fab-list>
+     <ion-fab-list side="left">
+         <button ion-fab><ion-icon name="switch"></ion-icon></button>
+     </ion-fab-list>
+ </ion-fab>
+    <ion-list>
+    <ion-card class="carButton" *ngFor ="let booking of bookingList" (click)="openBookingPage() ">
+
+    <ion-item >
+        <ion-avatar><img [src]="booking.avatar" alt="Not " style="background-color:#ebebeb" ></ion-avatar>
+        <h1>{{booking.to}}</h1>
+        <p >{{booking.time}}</p>
+
+    </ion-item>
+    <ion-card-content>
+<p>
+    Bus are available for booking
+</p>
+    </ion-card-content>
+
+    <ion-row>
+        <ion-col>
+            <ion-item><button ion-button icon-left clear small item-start="">
+                <ion-icon color ="secondary" name="eye"></ion-icon>
+            </button>
+                <ion-badge color="dark" >{{booking.free}} free</ion-badge>
+            </ion-item>
+        </ion-col>
+
+        <ion-col>
+            <ion-item><button ion-button icon-left clear small item-start="">
+                <ion-icon color ="danger" name="eye-off"></ion-icon>
+            </button>
+                <ion-badge color="dark" >{{booking.busy}} busy</ion-badge>
+            </ion-item>
+        </ion-col>
+        <ion-col center text-center>
+            <ion-note color="dark"><h2>{{booking.last_updated}} h ago</h2>
+
+            </ion-note>
+        </ion-col>
+    </ion-row>
+
+    </ion-card>
+    </ion-list></ion-content>
