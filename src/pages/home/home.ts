@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {NavController} from "ionic-angular";
 import {BookingProvider} from "../../providers/booking/booking";
+import {Observable} from "rxjs/Observable"
 
 @Component({
   selector: 'page-home',
