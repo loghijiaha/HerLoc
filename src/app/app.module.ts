@@ -30,7 +30,7 @@ var config = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
     LoginPage
   ],
   imports: [
@@ -42,6 +42,7 @@ var config = {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    LoginPage,
     MyApp,
     AboutPage,
     ContactPage,
