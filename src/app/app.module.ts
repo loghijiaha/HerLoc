@@ -42,6 +42,7 @@ var config = {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    LoginPage,
     MyApp,
     LoginPage,RegisterPage
 
