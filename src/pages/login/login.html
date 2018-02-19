@@ -5,16 +5,19 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-<ion-navbar color:"primary">
+<ion-navbar >
 <ion-title>Login</ion-title>
 </ion-navbar>
 </ion-header>
 <ion-content padding>
 <ion-item>
   <ion-label floating >User Name</ion-label>
-    <ion-input type="text" [ngModel]="user.username"></ion-input>
+    <ion-input type="text" [(ngModel)]="user.username"></ion-input>
 </ion-item>
+  <ion-item>
 <ion-label floating >Passwod</ion-label>
-  <ion-input type="password" [ngModel]="user.password"></ion-input>
-</ion-item
+  <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+</ion-item>
+  <button ion-button (click)="login()">Login</button>
+  <button ion-button color="light" (click)="navReg()">Register</button>
 </ion-content>
